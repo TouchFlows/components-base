@@ -6,56 +6,42 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface ComponentTemplate {
+        "dataTopics"?: string;
+        "dataType"?: 'cloud' | 'messages' | 'indicator' | 'proxy';
+        "setData": (data: any) => Promise<void>;
     }
 }
+export interface ComponentTemplateCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLComponentTemplateElement;
+}
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLComponentTemplateElement extends Components.ComponentTemplate, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLComponentTemplateElement: {
+        prototype: HTMLComponentTemplateElement;
+        new (): HTMLComponentTemplateElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "component-template": HTMLComponentTemplateElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface ComponentTemplate {
+        "dataTopics"?: string;
+        "dataType"?: 'cloud' | 'messages' | 'indicator' | 'proxy';
+        "onSubscribe"?: (event: ComponentTemplateCustomEvent<any>) => void;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "component-template": ComponentTemplate;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "component-template": LocalJSX.ComponentTemplate & JSXBase.HTMLAttributes<HTMLComponentTemplateElement>;
         }
     }
 }
