@@ -1,0 +1,16 @@
+echarts-line {
+  /* Component styles go here */
+}
+
+div,
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}

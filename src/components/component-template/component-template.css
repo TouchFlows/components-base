@@ -1,16 +1,16 @@
 :host {
   display: block;
-} 
+}
 
 .container {
-  position:absolute;
+  position: absolute;
   top: 50px;
   left: 50px;
-  width:300px;
+  width: 300px;
   height: 400px;
   background-color: blue;
 }
 
 .white {
-  color:white;
+  color: white;
 }

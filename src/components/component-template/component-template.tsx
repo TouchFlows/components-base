@@ -1,19 +1,19 @@
-import { Component, h, Prop, Element, Method, State, Watch, Host, Listen, Event, EventEmitter } from '@stencil/core';
-import { getIDBKey } from '../../utils/utils';
-import { Message } from '../../interfaces/IMessages';
+import { Component, Element, Event, EventEmitter, h, Host, Listen, Method, Prop, State, Watch } from '@stencil/core'
+
+import { Message } from '../../interfaces/IMessages'
+import { getIDBKey } from '../../utils/utils'
 
 @Component({
-	tag: 'component-template',
-	styleUrl: 'component-template.css',
-	shadow: true,
+  tag: 'component-template',
+  styleUrl: 'component-template.css',
+  shadow: true,
 })
 export class ComponentTemplate {
+  @Element() el: HTMLElement
 
-	@Element() el: HTMLElement
+  @Event({ eventName: 'subscribe', bubbles: true, composed: true }) subscribe: EventEmitter<any>
 
-	@Event({eventName: 'subscribe', bubbles: true, composed: true}) subscribe: EventEmitter<any>;
-
-	@Method() public async setData(data: any) {
+  @Method() public async setData(data: any) {
     if (data.data.length === 0) {
       return
     }
@@ -21,52 +21,55 @@ export class ComponentTemplate {
 
     this.state = {
       ...this.state,
-      data: myData
+      data: myData,
     }
   }
 
-	@Listen('topic-update', {target: 'document'})
-  async idbHandler(ev: CustomEvent){    
-    if(ev.detail.topics == this.dataTopics && ev.detail.type ==this.dataType) {
-      await getIDBKey(`${this.el.dataset.type}.${this.el.dataset.topics}`)
-      .then(data => {
-        console.debug('topic-update ',this.el.tagName.toLowerCase(), data)
+  @Listen('topic-update', { target: 'document' })
+  async idbHandler(ev: CustomEvent) {
+    if (ev.detail.topics == this.dataTopics && ev.detail.type == this.dataType) {
+      await getIDBKey(`${this.el.dataset.type}.${this.el.dataset.topics}`).then(data => {
+        console.debug('topic-update ', this.el.tagName.toLowerCase(), data)
         this.setData(data)
       })
     }
   }
 
-	@Prop({ mutable: true, reflect: true }) public dataTopics?: string
+  @Prop({ mutable: true, reflect: true }) public dataTopics?: string
 
-	@Prop() public dataType?: 'cloud' | 'messages' | 'indicator' | 'proxy' = 'messages'
+  @Prop() public dataType?: 'cloud' | 'messages' | 'indicator' | 'proxy' = 'messages'
 
-	@State() state: {
+  @State() state: {
     data: any
   }
 
-	@Watch('dataTopics')
-	dataTopicsChanged(){}
+  @Watch('dataTopics')
+  dataTopicsChanged() {}
 
-	async connectedCallback(){
-		this.state = {
-			data: []
-		}
-		console.debug('subscribing ' + this.el.tagName.toLowerCase(), this.el.dataset)
-    this.subscribe.emit(this.el.dataset);
-	}
+  async connectedCallback() {
+    this.state = {
+      data: [],
+    }
+    console.debug('subscribing ' + this.el.tagName.toLowerCase(), this.el.dataset)
+    this.subscribe.emit(this.el.dataset)
+  }
 
-	render() {
-		const { data } = this.state
-		if(data.length === 0) return
-		console.debug(data)
-		return (
-			<Host>
-				<div class="container">
-				{data.map((message: Message) => {
-					return <div class="white">{message.id}: {message.title}</div>
-				})}
-				</div>
-			</Host>
-		);
-	}
+  render() {
+    const { data } = this.state
+    if (data.length === 0) return
+    console.debug(data)
+    return (
+      <Host>
+        <div class="container">
+          {data.map((message: Message) => {
+            return (
+              <div class="white">
+                {message.id}: {message.title}
+              </div>
+            )
+          })}
+        </div>
+      </Host>
+    )
+  }
 }

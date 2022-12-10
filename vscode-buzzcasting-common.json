@@ -1,0 +1,2007 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "animate-this",
+      "description": {
+        "kind": "markdown",
+        "value": "animatable-component"
+      },
+      "attributes": [
+        {
+          "name": "animate-id",
+          "description": "A DOMString with which to reference the animation."
+        },
+        {
+          "name": "animation",
+          "description": "Name of the animation to get the keyFrames",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "rotate"
+            },
+            {
+              "name": "bounce"
+            },
+            {
+              "name": "flash"
+            },
+            {
+              "name": "jello"
+            },
+            {
+              "name": "pulse"
+            },
+            {
+              "name": "shake"
+            },
+            {
+              "name": "swing"
+            },
+            {
+              "name": "rubberBand"
+            },
+            {
+              "name": "tada"
+            },
+            {
+              "name": "wobble"
+            },
+            {
+              "name": "heartBeat"
+            },
+            {
+              "name": "bounceIn"
+            },
+            {
+              "name": "bounceInUp"
+            },
+            {
+              "name": "bounceInDown"
+            },
+            {
+              "name": "bounceOut"
+            },
+            {
+              "name": "bounceOutUp"
+            },
+            {
+              "name": "bounceOutDown"
+            },
+            {
+              "name": "bounceOutRight"
+            },
+            {
+              "name": "bounceOutLeft"
+            },
+            {
+              "name": "fadeIn"
+            },
+            {
+              "name": "fadeInUp"
+            },
+            {
+              "name": "fadeInUpBig"
+            },
+            {
+              "name": "fadeInDown"
+            },
+            {
+              "name": "fadeInDownBig"
+            },
+            {
+              "name": "fadeInRightBig"
+            },
+            {
+              "name": "fadeInLeftBig"
+            },
+            {
+              "name": "fadeOut"
+            },
+            {
+              "name": "fadeOutUp"
+            },
+            {
+              "name": "fadeOutUpBig"
+            },
+            {
+              "name": "fadeOutDown"
+            },
+            {
+              "name": "fadeOutDownBig"
+            },
+            {
+              "name": "fadeOutRight"
+            },
+            {
+              "name": "fadeOutRightBig"
+            },
+            {
+              "name": "fadeOutLeft"
+            },
+            {
+              "name": "fadeOutLeftBig"
+            },
+            {
+              "name": "flip"
+            },
+            {
+              "name": "flipInX"
+            },
+            {
+              "name": "flipInY"
+            },
+            {
+              "name": "flipOutX"
+            },
+            {
+              "name": "flipOutY"
+            },
+            {
+              "name": "lightSpeedIn"
+            },
+            {
+              "name": "lightSpeedOut"
+            },
+            {
+              "name": "rotateIn"
+            },
+            {
+              "name": "rotateInClockwise"
+            },
+            {
+              "name": "rotateInDownLeft"
+            },
+            {
+              "name": "rotateInDownRight"
+            },
+            {
+              "name": "rotateInUpLeft"
+            },
+            {
+              "name": "rotateInUpRight"
+            },
+            {
+              "name": "rotateOut"
+            },
+            {
+              "name": "rotateOutClockwise"
+            },
+            {
+              "name": "rotateOutDownLeft"
+            },
+            {
+              "name": "rotateOutDownRight"
+            },
+            {
+              "name": "rotateOutUpLeft"
+            },
+            {
+              "name": "rotateOutUpRight"
+            },
+            {
+              "name": "slideInUp"
+            },
+            {
+              "name": "slideInDown"
+            },
+            {
+              "name": "slideOutUp"
+            },
+            {
+              "name": "slideOutDown"
+            },
+            {
+              "name": "slideOutLeft"
+            },
+            {
+              "name": "slideOutRight"
+            },
+            {
+              "name": "zoomIn"
+            },
+            {
+              "name": "zoomInUp"
+            },
+            {
+              "name": "zoomInDown"
+            },
+            {
+              "name": "zoomInLeft"
+            },
+            {
+              "name": "zoomInRight"
+            },
+            {
+              "name": "zoomOut"
+            },
+            {
+              "name": "zoomOutUp"
+            },
+            {
+              "name": "zoomOutDown"
+            },
+            {
+              "name": "zoomOutLeft"
+            },
+            {
+              "name": "zoomOutRight"
+            },
+            {
+              "name": "hinge"
+            },
+            {
+              "name": "jackInTheBox"
+            },
+            {
+              "name": "rollIn"
+            },
+            {
+              "name": "rollOut"
+            },
+            {
+              "name": "scale-up-center"
+            },
+            {
+              "name": "scale-up-top"
+            },
+            {
+              "name": "scale-up-tr"
+            },
+            {
+              "name": "scale-up-right"
+            },
+            {
+              "name": "scale-up-br"
+            },
+            {
+              "name": "scale-up-bottom"
+            },
+            {
+              "name": "scale-up-bl"
+            },
+            {
+              "name": "scale-up-left"
+            },
+            {
+              "name": "scale-up-tl"
+            },
+            {
+              "name": "scale-up-hor-center"
+            },
+            {
+              "name": "scale-up-hor-left"
+            },
+            {
+              "name": "scale-up-hor-right"
+            },
+            {
+              "name": "scale-up-ver-center"
+            },
+            {
+              "name": "scale-up-ver-top"
+            },
+            {
+              "name": "scale-up-ver-bottom"
+            },
+            {
+              "name": "scale-down-center"
+            },
+            {
+              "name": "scale-down-top"
+            },
+            {
+              "name": "scale-down-tr"
+            },
+            {
+              "name": "scale-down-right"
+            },
+            {
+              "name": "scale-down-br"
+            },
+            {
+              "name": "scale-down-bottom"
+            },
+            {
+              "name": "scale-down-bl"
+            },
+            {
+              "name": "scale-down-left"
+            },
+            {
+              "name": "scale-down-tl"
+            },
+            {
+              "name": "scale-down-hor-center"
+            },
+            {
+              "name": "scale-down-hor-left"
+            },
+            {
+              "name": "scale-down-hor-right"
+            },
+            {
+              "name": "scale-down-ver-center"
+            },
+            {
+              "name": "scale-down-ver-top"
+            },
+            {
+              "name": "scale-down-ver-bottom"
+            },
+            {
+              "name": "rotate-center"
+            },
+            {
+              "name": "rotate-top"
+            },
+            {
+              "name": "rotate-tr"
+            },
+            {
+              "name": "rotate-right"
+            },
+            {
+              "name": "rotate-br"
+            },
+            {
+              "name": "rotate-bottom"
+            },
+            {
+              "name": "rotate-bl"
+            },
+            {
+              "name": "rotate-left"
+            },
+            {
+              "name": "rotate-tl"
+            },
+            {
+              "name": "rotate-hor-center"
+            },
+            {
+              "name": "rotate-hor-top"
+            },
+            {
+              "name": "rotate-hor-bottom"
+            },
+            {
+              "name": "rotate-vert-center"
+            },
+            {
+              "name": "rotate-vert-left"
+            },
+            {
+              "name": "rotate-vert-right"
+            },
+            {
+              "name": "rotate-diagonal-1"
+            },
+            {
+              "name": "rotate-diagonal-2"
+            },
+            {
+              "name": "rotate-diagonal-tr"
+            },
+            {
+              "name": "rotate-diagonal-br"
+            },
+            {
+              "name": "rotate-diagonal-bl"
+            },
+            {
+              "name": "rotate-diagonal-tl"
+            },
+            {
+              "name": "rotate-scale-up"
+            },
+            {
+              "name": "rotate-scale-down"
+            },
+            {
+              "name": "rotate-scale-up-hor"
+            },
+            {
+              "name": "rotate-scale-down-hor"
+            },
+            {
+              "name": "rotate-scale-up-ver"
+            },
+            {
+              "name": "rotate-scale-down-ver"
+            },
+            {
+              "name": "rotate-scale-up-diag-1"
+            },
+            {
+              "name": "rotate-scale-down-diag-1"
+            },
+            {
+              "name": "rotate-scale-up-diag-2"
+            },
+            {
+              "name": "rotate-scale-down-diag-2"
+            },
+            {
+              "name": "rotate-90-cw"
+            },
+            {
+              "name": "rotate-90-ccw"
+            },
+            {
+              "name": "rotate-90-top-cw"
+            },
+            {
+              "name": "rotate-90-top-ccw"
+            },
+            {
+              "name": "rotate-90-tr-cw"
+            },
+            {
+              "name": "rotate-90-tr-ccw"
+            },
+            {
+              "name": "rotate-90-right-cw"
+            },
+            {
+              "name": "rotate-90-right-ccw"
+            },
+            {
+              "name": "rotate-90-br-cw"
+            },
+            {
+              "name": "rotate-90-br-ccw"
+            },
+            {
+              "name": "rotate-90-bottom-cw"
+            },
+            {
+              "name": "rotate-90-bottom-ccw"
+            },
+            {
+              "name": "rotate-90-bl-cw"
+            },
+            {
+              "name": "rotate-90-bl-ccw"
+            },
+            {
+              "name": "rotate-90-left-cw"
+            },
+            {
+              "name": "rotate-90-left-ccw"
+            },
+            {
+              "name": "rotate-90-tl-cw"
+            },
+            {
+              "name": "rotate-90-tl-ccw"
+            },
+            {
+              "name": "rotate-90-horizontal-fwd"
+            },
+            {
+              "name": "rotate-90-horizontal-bck"
+            },
+            {
+              "name": "rotate-90-vertical-fwd"
+            },
+            {
+              "name": "rotate-90-vertical-bck"
+            },
+            {
+              "name": "flip-horizontal-bottom"
+            },
+            {
+              "name": "flip-horizontal-top"
+            },
+            {
+              "name": "flip-horizontal-bck"
+            },
+            {
+              "name": "flip-horizontal-fwd"
+            },
+            {
+              "name": "flip-vertical-right"
+            },
+            {
+              "name": "flip-vertical-left"
+            },
+            {
+              "name": "flip-vertical-bck"
+            },
+            {
+              "name": "flip-vertical-fwd"
+            },
+            {
+              "name": "flip-diagonal-1-tr"
+            },
+            {
+              "name": "flip-diagonal-1-bl"
+            },
+            {
+              "name": "flip-diagonal-1-bck"
+            },
+            {
+              "name": "flip-diagonal-1-fwd"
+            },
+            {
+              "name": "flip-diagonal-2-br"
+            },
+            {
+              "name": "flip-diagonal-2-tl"
+            },
+            {
+              "name": "flip-diagonal-2-bck"
+            },
+            {
+              "name": "flip-diagonal-2-fwd"
+            },
+            {
+              "name": "flip-2-hor-top-1"
+            },
+            {
+              "name": "flip-2-hor-top-2"
+            },
+            {
+              "name": "flip-2-hor-top-bck"
+            },
+            {
+              "name": "flip-2-hor-top-fwd"
+            },
+            {
+              "name": "flip-2-ver-right-1"
+            },
+            {
+              "name": "flip-2-ver-right-2"
+            },
+            {
+              "name": "flip-2-ver-right-bck"
+            },
+            {
+              "name": "flip-2-ver-right-fwd"
+            },
+            {
+              "name": "flip-2-hor-bottom-1"
+            },
+            {
+              "name": "flip-2-hor-bottom-2"
+            },
+            {
+              "name": "flip-2-hor-bottom-bck"
+            },
+            {
+              "name": "flip-2-hor-bottom-fwd"
+            },
+            {
+              "name": "flip-2-ver-left-1"
+            },
+            {
+              "name": "flip-2-ver-left-2"
+            },
+            {
+              "name": "flip-2-ver-left-bck"
+            },
+            {
+              "name": "flip-2-ver-left-fwd"
+            },
+            {
+              "name": "flip-scale-up-hor"
+            },
+            {
+              "name": "flip-scale-down-hor"
+            },
+            {
+              "name": "flip-scale-up-ver"
+            },
+            {
+              "name": "flip-scale-down-ver"
+            },
+            {
+              "name": "flip-scale-up-diag-1"
+            },
+            {
+              "name": "flip-scale-down-diag-1"
+            },
+            {
+              "name": "flip-scale-up-diag-2"
+            },
+            {
+              "name": "flip-scale-down-diag-2"
+            },
+            {
+              "name": "flip-scale-2-hor-top"
+            },
+            {
+              "name": "flip-scale-2-ver-right"
+            },
+            {
+              "name": "flip-scale-2-hor-bottom"
+            },
+            {
+              "name": "flip-scale-2-ver-left"
+            },
+            {
+              "name": "swing-top-fwd"
+            },
+            {
+              "name": "swing-top-bck"
+            },
+            {
+              "name": "swing-top-right-fwd"
+            },
+            {
+              "name": "swing-top-right-bck"
+            },
+            {
+              "name": "swing-right-fwd"
+            },
+            {
+              "name": "swing-right-bck"
+            },
+            {
+              "name": "swing-bottom-right-fwd"
+            },
+            {
+              "name": "swing-bottom-right-bck"
+            },
+            {
+              "name": "swing-bottom-fwd"
+            },
+            {
+              "name": "swing-bottom-bck"
+            },
+            {
+              "name": "swing-bottom-left-fwd"
+            },
+            {
+              "name": "swing-bottom-left-bck"
+            },
+            {
+              "name": "swing-left-fwd"
+            },
+            {
+              "name": "swing-left-bck"
+            },
+            {
+              "name": "swing-top-left-fwd"
+            },
+            {
+              "name": "swing-top-left-bck"
+            },
+            {
+              "name": "slide-top"
+            },
+            {
+              "name": "slide-tr"
+            },
+            {
+              "name": "slide-right"
+            },
+            {
+              "name": "slide-br"
+            },
+            {
+              "name": "slide-bottom"
+            },
+            {
+              "name": "slide-bl"
+            },
+            {
+              "name": "slide-left"
+            },
+            {
+              "name": "slide-tl"
+            },
+            {
+              "name": "slide-bck-center"
+            },
+            {
+              "name": "slide-bck-top"
+            },
+            {
+              "name": "slide-bck-tr"
+            },
+            {
+              "name": "slide-bck-right"
+            },
+            {
+              "name": "slide-bck-br"
+            },
+            {
+              "name": "slide-bck-bottom"
+            },
+            {
+              "name": "slide-bck-bl"
+            },
+            {
+              "name": "slide-bck-left"
+            },
+            {
+              "name": "slide-bck-tl"
+            },
+            {
+              "name": "slide-fwd-center"
+            },
+            {
+              "name": "slide-fwd-top"
+            },
+            {
+              "name": "slide-fwd-tr"
+            },
+            {
+              "name": "slide-fwd-right"
+            },
+            {
+              "name": "slide-fwd-br"
+            },
+            {
+              "name": "slide-fwd-bottom"
+            },
+            {
+              "name": "slide-fwd-bl"
+            },
+            {
+              "name": "slide-fwd-left"
+            },
+            {
+              "name": "slide-fwd-tl"
+            },
+            {
+              "name": "slide-rotate-hor-top"
+            },
+            {
+              "name": "slide-rotate-hor-t-bck"
+            },
+            {
+              "name": "slide-rotate-hor-t-fwd"
+            },
+            {
+              "name": "slide-rotate-ver-right"
+            },
+            {
+              "name": "slide-rotate-ver-r-bck"
+            },
+            {
+              "name": "slide-rotate-ver-r-fwd"
+            },
+            {
+              "name": "slide-rotate-hor-bottom"
+            },
+            {
+              "name": "slide-rotate-hor-b-bck"
+            },
+            {
+              "name": "slide-rotate-hor-b-fwd"
+            },
+            {
+              "name": "slide-rotate-ver-left"
+            },
+            {
+              "name": "slide-rotate-ver-l-bck"
+            },
+            {
+              "name": "slide-rotate-ver-l-fwd"
+            },
+            {
+              "name": "shadow-drop-center"
+            },
+            {
+              "name": "shadow-drop-top"
+            },
+            {
+              "name": "shadow-drop-right"
+            },
+            {
+              "name": "shadow-drop-bottom"
+            },
+            {
+              "name": "shadow-drop-left"
+            },
+            {
+              "name": "shadow-drop-lr"
+            },
+            {
+              "name": "shadow-drop-tb"
+            },
+            {
+              "name": "shadow-drop-tr"
+            },
+            {
+              "name": "shadow-drop-br"
+            },
+            {
+              "name": "shadow-drop-bl"
+            },
+            {
+              "name": "shadow-drop-tl"
+            },
+            {
+              "name": "shadow-drop-2-center"
+            },
+            {
+              "name": "shadow-drop-2-top"
+            },
+            {
+              "name": "shadow-drop-2-right"
+            },
+            {
+              "name": "shadow-drop-2-bottom"
+            },
+            {
+              "name": "shadow-drop-2-left"
+            },
+            {
+              "name": "shadow-drop-2-lr"
+            },
+            {
+              "name": "shadow-drop-2-tb"
+            },
+            {
+              "name": "shadow-drop-2-tr"
+            },
+            {
+              "name": "shadow-drop-2-br"
+            },
+            {
+              "name": "shadow-drop-2-bl"
+            },
+            {
+              "name": "shadow-drop-2-tl"
+            },
+            {
+              "name": "shadow-pop-tr"
+            },
+            {
+              "name": "shadow-pop-br"
+            },
+            {
+              "name": "shadow-pop-bl"
+            },
+            {
+              "name": "shadow-pop-tl"
+            },
+            {
+              "name": "shadow-inset-center"
+            },
+            {
+              "name": "shadow-inset-top"
+            },
+            {
+              "name": "shadow-inset-right"
+            },
+            {
+              "name": "shadow-inset-bottom"
+            },
+            {
+              "name": "shadow-inset-left"
+            },
+            {
+              "name": "shadow-inset-lr"
+            },
+            {
+              "name": "shadow-inset-tb"
+            },
+            {
+              "name": "shadow-inset-tr"
+            },
+            {
+              "name": "shadow-inset-br"
+            },
+            {
+              "name": "shadow-inset-bl"
+            },
+            {
+              "name": "shadow-inset-tl"
+            },
+            {
+              "name": "scale-in-center"
+            },
+            {
+              "name": "scale-in-top"
+            },
+            {
+              "name": "scale-in-tr"
+            },
+            {
+              "name": "scale-in-right"
+            },
+            {
+              "name": "scale-in-br"
+            },
+            {
+              "name": "scale-in-bottom"
+            },
+            {
+              "name": "scale-in-bl"
+            },
+            {
+              "name": "scale-in-left"
+            },
+            {
+              "name": "scale-in-tl"
+            },
+            {
+              "name": "scale-in-hor-center"
+            },
+            {
+              "name": "scale-in-hor-left"
+            },
+            {
+              "name": "scale-in-hor-right"
+            },
+            {
+              "name": "scale-in-ver-center"
+            },
+            {
+              "name": "scale-in-ver-top"
+            },
+            {
+              "name": "scale-in-ver-bottom"
+            },
+            {
+              "name": "rotate-in-center"
+            },
+            {
+              "name": "rotate-in-top"
+            },
+            {
+              "name": "rotate-in-tr"
+            },
+            {
+              "name": "rotate-in-right"
+            },
+            {
+              "name": "rotate-in-br"
+            },
+            {
+              "name": "rotate-in-bottom"
+            },
+            {
+              "name": "rotate-in-bl"
+            },
+            {
+              "name": "rotate-in-left"
+            },
+            {
+              "name": "rotate-in-tl"
+            },
+            {
+              "name": "rotate-in-hor"
+            },
+            {
+              "name": "rotate-in-ver"
+            },
+            {
+              "name": "rotate-in-diag-1"
+            },
+            {
+              "name": "rotate-in-diag-2"
+            },
+            {
+              "name": "rotate-in-2-cw"
+            },
+            {
+              "name": "rotate-in-2-ccw"
+            },
+            {
+              "name": "rotate-in-2-fwd-cw"
+            },
+            {
+              "name": "rotate-in-2-fwd-ccw"
+            },
+            {
+              "name": "rotate-in-2-bck-cw"
+            },
+            {
+              "name": "rotate-in-2-bck-ccw"
+            },
+            {
+              "name": "rotate-in-2-tr-cw"
+            },
+            {
+              "name": "rotate-in-2-tr-ccw"
+            },
+            {
+              "name": "rotate-in-2-br-cw"
+            },
+            {
+              "name": "rotate-in-2-br-ccw"
+            },
+            {
+              "name": "rotate-in-2-bl-cw"
+            },
+            {
+              "name": "rotate-in-2-bl-ccw"
+            },
+            {
+              "name": "rotate-in-2-tl-cw"
+            },
+            {
+              "name": "rotate-in-2-tl-ccw"
+            },
+            {
+              "name": "swirl-in-fwd"
+            },
+            {
+              "name": "swirl-in-bck"
+            },
+            {
+              "name": "swirl-in-top-fwd"
+            },
+            {
+              "name": "swirl-in-top-bck"
+            },
+            {
+              "name": "swirl-in-tr-fwd"
+            },
+            {
+              "name": "swirl-in-tr-bck"
+            },
+            {
+              "name": "swirl-in-right-fwd"
+            },
+            {
+              "name": "swirl-in-right-bck"
+            },
+            {
+              "name": "swirl-in-br-fwd"
+            },
+            {
+              "name": "swirl-in-br-bck"
+            },
+            {
+              "name": "swirl-in-bottom-fwd"
+            },
+            {
+              "name": "swirl-in-bottom-bck"
+            },
+            {
+              "name": "swirl-in-bl-fwd"
+            },
+            {
+              "name": "swirl-in-bl-bck"
+            },
+            {
+              "name": "swirl-in-left-fwd"
+            },
+            {
+              "name": "swirl-in-left-bck"
+            },
+            {
+              "name": "swirl-in-tl-fwd"
+            },
+            {
+              "name": "swirl-in-tl-bck"
+            },
+            {
+              "name": "flip-in-hor-bottom"
+            },
+            {
+              "name": "flip-in-hor-top"
+            },
+            {
+              "name": "flip-in-ver-right"
+            },
+            {
+              "name": "flip-in-ver-left"
+            },
+            {
+              "name": "flip-in-diag-1-tr"
+            },
+            {
+              "name": "flip-in-diag-1-bl"
+            },
+            {
+              "name": "flip-in-diag-2-tl"
+            },
+            {
+              "name": "flip-in-diag-2-br"
+            },
+            {
+              "name": "slit-in-vertical"
+            },
+            {
+              "name": "slit-in-horizontal"
+            },
+            {
+              "name": "slit-in-diagonal-1"
+            },
+            {
+              "name": "slit-in-diagonal-2"
+            },
+            {
+              "name": "slide-in-top"
+            },
+            {
+              "name": "slide-in-tr"
+            },
+            {
+              "name": "slide-in-right"
+            },
+            {
+              "name": "slide-in-br"
+            },
+            {
+              "name": "slide-in-bottom"
+            },
+            {
+              "name": "slide-in-bl"
+            },
+            {
+              "name": "slide-in-left"
+            },
+            {
+              "name": "slide-in-tl"
+            },
+            {
+              "name": "slide-in-fwd-center"
+            },
+            {
+              "name": "slide-in-fwd-top"
+            },
+            {
+              "name": "slide-in-fwd-tr"
+            },
+            {
+              "name": "slide-in-fwd-right"
+            },
+            {
+              "name": "slide-in-fwd-br"
+            },
+            {
+              "name": "slide-in-fwd-bottom"
+            },
+            {
+              "name": "slide-in-fwd-bl"
+            },
+            {
+              "name": "slide-in-fwd-left"
+            },
+            {
+              "name": "slide-in-fwd-tl"
+            },
+            {
+              "name": "slide-in-bck-center"
+            },
+            {
+              "name": "slide-in-bck-top"
+            },
+            {
+              "name": "slide-in-bck-tr"
+            },
+            {
+              "name": "slide-in-bck-right"
+            },
+            {
+              "name": "slide-in-bck-br"
+            },
+            {
+              "name": "slide-in-bck-bottom"
+            },
+            {
+              "name": "slide-in-bck-bl"
+            },
+            {
+              "name": "slide-in-bck-left"
+            },
+            {
+              "name": "slide-in-bck-tl"
+            },
+            {
+              "name": "slide-in-blurred-top"
+            },
+            {
+              "name": "slide-in-blurred-tr"
+            },
+            {
+              "name": "slide-in-blurred-right"
+            },
+            {
+              "name": "slide-in-blurred-br"
+            },
+            {
+              "name": "slide-in-blurred-bottom"
+            },
+            {
+              "name": "slide-in-blurred-bl"
+            },
+            {
+              "name": "slide-in-blurred-left"
+            },
+            {
+              "name": "slide-in-blurred-tl"
+            },
+            {
+              "name": "slide-in-elliptic-top-fwd"
+            },
+            {
+              "name": "slide-in-elliptic-top-bck"
+            },
+            {
+              "name": "slide-in-elliptic-right-fwd"
+            },
+            {
+              "name": "slide-in-elliptic-right-bck"
+            },
+            {
+              "name": "slide-in-elliptic-bottom-fwd"
+            },
+            {
+              "name": "slide-in-elliptic-bottom-bck"
+            },
+            {
+              "name": "slide-in-elliptic-left-fwd"
+            },
+            {
+              "name": "slide-in-elliptic-left-bck"
+            },
+            {
+              "name": "bounce-in-top"
+            },
+            {
+              "name": "bounce-in-right"
+            },
+            {
+              "name": "bounce-in-bottom"
+            },
+            {
+              "name": "bounce-in-left"
+            },
+            {
+              "name": "bounce-in-fwd"
+            },
+            {
+              "name": "bounce-in-bck"
+            },
+            {
+              "name": "roll-in-left"
+            },
+            {
+              "name": "roll-in-top"
+            },
+            {
+              "name": "roll-in-right"
+            },
+            {
+              "name": "roll-in-bottom"
+            },
+            {
+              "name": "roll-in-blurred-left"
+            },
+            {
+              "name": "roll-in-blurred-top"
+            },
+            {
+              "name": "roll-in-blurred-right"
+            },
+            {
+              "name": "roll-in-blurred-bottom"
+            },
+            {
+              "name": "tilt-in-top-1"
+            },
+            {
+              "name": "tilt-in-top-2"
+            },
+            {
+              "name": "tilt-in-tr"
+            },
+            {
+              "name": "tilt-in-right-1"
+            },
+            {
+              "name": "tilt-in-right-2"
+            },
+            {
+              "name": "tilt-in-br"
+            },
+            {
+              "name": "tilt-in-bottom-1"
+            },
+            {
+              "name": "tilt-in-bottom-2"
+            },
+            {
+              "name": "tilt-in-bl"
+            },
+            {
+              "name": "tilt-in-left-1"
+            },
+            {
+              "name": "tilt-in-left-2"
+            },
+            {
+              "name": "tilt-in-tl"
+            },
+            {
+              "name": "tilt-in-fwd-tr"
+            },
+            {
+              "name": "tilt-in-fwd-br"
+            },
+            {
+              "name": "tilt-in-fwd-bl"
+            },
+            {
+              "name": "tilt-in-fwd-tl"
+            },
+            {
+              "name": "swing-in-top-fwd"
+            },
+            {
+              "name": "swing-in-top-bck"
+            },
+            {
+              "name": "swing-in-right-fwd"
+            },
+            {
+              "name": "swing-in-right-bck"
+            },
+            {
+              "name": "swing-in-bottom-fwd"
+            },
+            {
+              "name": "swing-in-bottom-bck"
+            },
+            {
+              "name": "swing-in-left-fwd"
+            },
+            {
+              "name": "swing-in-left-bck"
+            },
+            {
+              "name": "fade-in-fwd"
+            },
+            {
+              "name": "fade-in-bck"
+            },
+            {
+              "name": "fade-in-top"
+            },
+            {
+              "name": "fade-in-tr"
+            },
+            {
+              "name": "fade-in-right"
+            },
+            {
+              "name": "fade-in-br"
+            },
+            {
+              "name": "fade-in-bottom"
+            },
+            {
+              "name": "fade-in-bl"
+            },
+            {
+              "name": "fade-in-left"
+            },
+            {
+              "name": "fade-in-tl"
+            },
+            {
+              "name": "puff-in-center"
+            },
+            {
+              "name": "puff-in-top"
+            },
+            {
+              "name": "puff-in-tr"
+            },
+            {
+              "name": "puff-in-right"
+            },
+            {
+              "name": "puff-in-br"
+            },
+            {
+              "name": "puff-in-bottom"
+            },
+            {
+              "name": "puff-in-bl"
+            },
+            {
+              "name": "puff-in-left"
+            },
+            {
+              "name": "puff-in-tl"
+            },
+            {
+              "name": "puff-in-hor"
+            },
+            {
+              "name": "puff-in-ver"
+            },
+            {
+              "name": "flicker-in-1"
+            },
+            {
+              "name": "flicker-in-2"
+            },
+            {
+              "name": "tracking-in-expand"
+            },
+            {
+              "name": "tracking-in-expand-fwd"
+            },
+            {
+              "name": "tracking-in-expand-fwd-top"
+            },
+            {
+              "name": "tracking-in-expand-fwd-bottom"
+            },
+            {
+              "name": "tracking-in-contract"
+            },
+            {
+              "name": "tracking-in-contract-bck"
+            },
+            {
+              "name": "tracking-in-contract-bck-top"
+            },
+            {
+              "name": "tracking-in-contract-bck-bottom"
+            },
+            {
+              "name": "text-focus-in"
+            },
+            {
+              "name": "focus-in-expand"
+            },
+            {
+              "name": "focus-in-expand-fwd"
+            },
+            {
+              "name": "focus-in-contract"
+            },
+            {
+              "name": "focus-in-contract-bck"
+            },
+            {
+              "name": "text-shadow-drop-center"
+            },
+            {
+              "name": "text-shadow-drop-top"
+            },
+            {
+              "name": "text-shadow-drop-tr"
+            },
+            {
+              "name": "text-shadow-drop-right"
+            },
+            {
+              "name": "text-shadow-drop-br"
+            },
+            {
+              "name": "text-shadow-drop-bottom"
+            },
+            {
+              "name": "text-shadow-drop-bl"
+            },
+            {
+              "name": "text-shadow-drop-left"
+            },
+            {
+              "name": "text-shadow-drop-tl"
+            },
+            {
+              "name": "text-shadow-pop-top"
+            },
+            {
+              "name": "text-shadow-pop-tr"
+            },
+            {
+              "name": "text-shadow-pop-right"
+            },
+            {
+              "name": "text-shadow-pop-br"
+            },
+            {
+              "name": "text-shadow-pop-bottom"
+            },
+            {
+              "name": "text-shadow-pop-bl"
+            },
+            {
+              "name": "text-shadow-pop-left"
+            },
+            {
+              "name": "text-shadow-pop-tl"
+            },
+            {
+              "name": "text-pop-up-top"
+            },
+            {
+              "name": "text-pop-up-tr"
+            },
+            {
+              "name": "text-pop-up-right"
+            },
+            {
+              "name": "text-pop-up-br"
+            },
+            {
+              "name": "text-pop-up-bottom"
+            },
+            {
+              "name": "text-pop-up-bl"
+            },
+            {
+              "name": "text-pop-up-left"
+            },
+            {
+              "name": "text-pop-up-tl"
+            },
+            {
+              "name": "vibrate-1"
+            },
+            {
+              "name": "vibrate-2"
+            },
+            {
+              "name": "shake-horizontal"
+            },
+            {
+              "name": "shake-vertical"
+            },
+            {
+              "name": "shake-lr"
+            },
+            {
+              "name": "shake-top"
+            },
+            {
+              "name": "shake-tr"
+            },
+            {
+              "name": "shake-right"
+            },
+            {
+              "name": "shake-br"
+            },
+            {
+              "name": "shake-bottom"
+            },
+            {
+              "name": "shake-bl"
+            },
+            {
+              "name": "shake-left"
+            },
+            {
+              "name": "shake-tl"
+            },
+            {
+              "name": "jello-horizontal"
+            },
+            {
+              "name": "jello-vertical"
+            },
+            {
+              "name": "jello-diagonal-1"
+            },
+            {
+              "name": "jello-diagonal-2"
+            },
+            {
+              "name": "wobble-hor-bottom"
+            },
+            {
+              "name": "wobble-hor-top"
+            },
+            {
+              "name": "wobble-ver-left"
+            },
+            {
+              "name": "wobble-ver-right"
+            },
+            {
+              "name": "bounce-top"
+            },
+            {
+              "name": "bounce-bottom"
+            },
+            {
+              "name": "bounce-left"
+            },
+            {
+              "name": "bounce-right"
+            },
+            {
+              "name": "pulsate-bck"
+            },
+            {
+              "name": "pulsate-fwd"
+            },
+            {
+              "name": "ping"
+            },
+            {
+              "name": "ken-burns-top"
+            },
+            {
+              "name": "ken-burns-top-right"
+            },
+            {
+              "name": "ken-burns-right"
+            },
+            {
+              "name": "ken-burns-bottom-right"
+            },
+            {
+              "name": "ken-burns-bottom"
+            },
+            {
+              "name": "ken-burns-bottom-left"
+            },
+            {
+              "name": "ken-burns-left"
+            },
+            {
+              "name": "ken-burns-top-left"
+            },
+            {
+              "name": "bg-pan-left"
+            },
+            {
+              "name": "bg-pan-right"
+            },
+            {
+              "name": "bg-pan-top"
+            },
+            {
+              "name": "bg-pan-bottom"
+            },
+            {
+              "name": "bg-pan-tr"
+            },
+            {
+              "name": "bg-pan-br"
+            },
+            {
+              "name": "bg-pan-bl"
+            },
+            {
+              "name": "bg-pan-tl"
+            }
+          ]
+        },
+        {
+          "name": "autoplay",
+          "description": "Start the animation when the component is mounted."
+        },
+        {
+          "name": "composite",
+          "description": "Determines how values are combined between this animation and other,\nseparate animations that do not specify their own specific composite operation.\nDefaults to `replace`.",
+          "values": [
+            {
+              "name": "accumulate"
+            },
+            {
+              "name": "add"
+            },
+            {
+              "name": "replace"
+            }
+          ]
+        },
+        {
+          "name": "current-time",
+          "description": "Sets the current time value of the animation in milliseconds, whether running or paused."
+        },
+        {
+          "name": "delay",
+          "description": "The number of milliseconds to delay the start of the animation.\nDefaults to 0."
+        },
+        {
+          "name": "direction",
+          "description": "Direction of the animation.",
+          "values": [
+            {
+              "name": "alternate"
+            },
+            {
+              "name": "alternate-reverse"
+            },
+            {
+              "name": "normal"
+            },
+            {
+              "name": "reverse"
+            }
+          ]
+        },
+        {
+          "name": "duration",
+          "description": "The number of milliseconds each iteration of the animation takes to complete.\nDefaults to 0."
+        },
+        {
+          "name": "easing",
+          "description": "The rate of the animation's change over time."
+        },
+        {
+          "name": "end-delay",
+          "description": "The number of milliseconds to delay after the end of an animation."
+        },
+        {
+          "name": "fill",
+          "description": "Dictates whether the animation's effects should be reflected\nby the element(s) prior to playing (\"backwards\"), retained after the animation\nhas completed playing (\"forwards\"), or both. Defaults to \"none\".",
+          "values": [
+            {
+              "name": "auto"
+            },
+            {
+              "name": "backwards"
+            },
+            {
+              "name": "both"
+            },
+            {
+              "name": "forwards"
+            },
+            {
+              "name": "none"
+            }
+          ]
+        },
+        {
+          "name": "from-class-name",
+          "description": "The class name to be applied when the animation starts"
+        },
+        {
+          "name": "iteration-composite",
+          "description": "Determines how values build from iteration to iteration in this animation.",
+          "values": [
+            {
+              "name": "accumulate"
+            },
+            {
+              "name": "replace"
+            }
+          ]
+        },
+        {
+          "name": "iteration-start",
+          "description": "Describes at what point in the iteration the animation should start."
+        },
+        {
+          "name": "iterations",
+          "description": "The number of times the animation should repeat.\nDefaults to `1`, and can also take a value of `Infinity` to make it repeat for as long as the element exists."
+        },
+        {
+          "name": "key-frames-data",
+          "description": "Keyframes of the animation in string format."
+        },
+        {
+          "name": "options-data",
+          "description": "Default options of the animation in string format."
+        },
+        {
+          "name": "playback-rate",
+          "description": "Sets the playback rate of the animation."
+        },
+        {
+          "name": "start-time",
+          "description": "Sets the scheduled time when an animation's playback should begin."
+        },
+        {
+          "name": "to-class-name",
+          "description": "The class name to be applied when the animation ends"
+        }
+      ]
+    },
+    {
+      "name": "component-template",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "data-topics",
+          "description": ""
+        },
+        {
+          "name": "data-type",
+          "description": "",
+          "values": [
+            {
+              "name": "cloud"
+            },
+            {
+              "name": "indicator"
+            },
+            {
+              "name": "messages"
+            },
+            {
+              "name": "proxy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "date-time",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "dateformat",
+          "description": "DayJS datetime formatting"
+        },
+        {
+          "name": "locale",
+          "description": "DayJS country-based locale formating",
+          "values": [
+            {
+              "name": "de"
+            },
+            {
+              "name": "en"
+            },
+            {
+              "name": "fr"
+            },
+            {
+              "name": "ja"
+            },
+            {
+              "name": "zh-cn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "echarts-bar",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "option",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "echarts-line",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "option",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "echarts-pie",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "height",
+          "description": ""
+        },
+        {
+          "name": "option",
+          "description": ""
+        },
+        {
+          "name": "width",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "qr-code",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "color-dark",
+          "description": ""
+        },
+        {
+          "name": "color-light",
+          "description": ""
+        },
+        {
+          "name": "contents",
+          "description": "String to encode in QR"
+        },
+        {
+          "name": "error-correction-level",
+          "description": "ErrorCorrectionLevel.High"
+        },
+        {
+          "name": "margin",
+          "description": ""
+        },
+        {
+          "name": "output-mode",
+          "description": ""
+        },
+        {
+          "name": "scale",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "rotating-globe",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "code",
+          "description": "ISO-1302 country code to rotate to"
+        },
+        {
+          "name": "height",
+          "description": "Canvas height"
+        },
+        {
+          "name": "options",
+          "description": "Globe options"
+        },
+        {
+          "name": "width",
+          "description": "Canvas width"
+        }
+      ]
+    },
+    {
+      "name": "slow-counter",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "show-percent",
+          "description": "For showing change percentage"
+        },
+        {
+          "name": "start",
+          "description": "Start value of count"
+        },
+        {
+          "name": "value",
+          "description": "Counter value"
+        }
+      ]
+    }
+  ]
+}
