@@ -35,8 +35,7 @@
   },
   "dependencies": {
     "@stencil/core": "2.20.0",
-    "husky": "^8.0.2",
-    "qrcode-generator": "^1.4.4",
+    "husky": "^8.0.2"
   },
   "lint-staged": {
     "*{.ts,.tsx,.js}": [

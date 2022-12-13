@@ -1,1 +1,1 @@
-export * from './qrcode-enum'
+/** export * from './enums' */

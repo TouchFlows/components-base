@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'buzzcasting-common',
+  namespace: 'components-base',
   globalStyle: './src/global/tailwind.css',
   outputTargets: [
     {
@@ -13,7 +13,7 @@ export const config: Config = {
     },
     { 
         type: 'docs-vscode',
-        file: 'vscode-buzzcasting-common.json',
+        file: 'vscode-components-base.json',
     }
   ],
 };
