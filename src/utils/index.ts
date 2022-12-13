@@ -1,6 +1,4 @@
-export * from './animate'
 export * from './dom'
 export * from './idb'
 export * from './messages'
 export * from './utils'
-export * from './waapi'
