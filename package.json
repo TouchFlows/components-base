@@ -1,8 +1,8 @@
 {
-  "name": "buzzcasting-common",
-  "private": true,
+  "name": "components-base",
+  "private": false,
   "version": "0.0.8",
-  "description": "Common components used by BuzzCasting",
+  "description": "Base components used by BuzzCasting",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -10,10 +10,10 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/buzzcasting-common/buzzcasting-common.esm.js",
+  "unpkg": "dist/components-base/components-base.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TouchFlows/buzzcasting-common.git"
+    "url": "https://github.com/TouchFlows/components-base.git"
   },
   "files": [
     "dist/",
@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "NODE_ENV=production run-s build:tailwind build:stencil",
-    "start": "NODE_ENV=development npm-run-all -p dev:*",    
+    "start": "NODE_ENV=development npm-run-all -p dev:*",
     "dev:tailwind": "tailwindcss -i src/all.pcss -o src/global/tailwind.css --watch",
     "dev:stencil": "stencil build --dev --watch --serve",
     "build:stencil": "stencil build --docs",
@@ -29,15 +29,14 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "lint": "eslint src/**/*{.ts,.tsx}"
+    "prepare": "husky install",
+    "lint": "eslint src/**/*{.ts,.tsx}",
+    "lint:fix": "eslint src/**/*{.ts,.tsx} --fix"
   },
   "dependencies": {
     "@stencil/core": "2.20.0",
-    "d3": "^7.7.0",
-    "dayjs": "^1.11.7",
-    "echarts": "^5.4.0",
+    "husky": "^8.0.2",
     "qrcode-generator": "^1.4.4",
-    "topojson-client": "^3.1.0"
   },
   "lint-staged": {
     "*{.ts,.tsx,.js}": [
@@ -54,7 +53,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^8.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "7.0.4",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
     "lint-staged": "^13.1.0",
@@ -64,5 +63,5 @@
     "puppeteer": "^19.4.0",
     "tailwindcss": "^3.2.4"
   },
-  "license": ""
+  "license": "MIT"
 }

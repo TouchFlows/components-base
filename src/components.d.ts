@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { AnimationsType } from "./animations";
 import { ErrorCorrectionLevel, OutputMode } from "./enums";
+import { IRotatingGlobe } from "./interfaces/IRotatingGLobe";
 export namespace Components {
     interface AnimateThis {
         /**
@@ -206,7 +207,7 @@ export namespace Components {
         /**
           * Globe options
          */
-        "options": any;
+        "options": IRotatingGlobe;
         "setCountryCode": (code: string) => Promise<void>;
         /**
           * Canvas width
@@ -215,11 +216,15 @@ export namespace Components {
     }
     interface SlowCounter {
         /**
+          * initial counter value multiplier (i.e. start at 99.99% of value)
+         */
+        "multiplier": number;
+        /**
           * For showing change percentage
          */
         "showPercent"?: 0 | 1;
         /**
-          * Start value of count
+          * Start value of counter
          */
         "start": number;
         /**
@@ -463,7 +468,7 @@ declare namespace LocalJSX {
         /**
           * Globe options
          */
-        "options"?: any;
+        "options"?: IRotatingGlobe;
         /**
           * Canvas width
          */
@@ -471,11 +476,15 @@ declare namespace LocalJSX {
     }
     interface SlowCounter {
         /**
+          * initial counter value multiplier (i.e. start at 99.99% of value)
+         */
+        "multiplier"?: number;
+        /**
           * For showing change percentage
          */
         "showPercent"?: 0 | 1;
         /**
-          * Start value of count
+          * Start value of counter
          */
         "start"?: number;
         /**

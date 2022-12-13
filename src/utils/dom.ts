@@ -8,7 +8,7 @@ export const getElementToAnimate = (parent: HTMLElement): HTMLElement => {
 }
 
 /**
- * Clear HTML contents
+ * Clear Container range contents of template code when the web component is connected to the DOM
  * @param myNode
  */
 export const clearContents = (myNode: HTMLElement): void => {

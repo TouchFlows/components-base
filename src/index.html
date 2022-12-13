@@ -8,7 +8,7 @@
   <meta name="bearer" content="2|xZDRcAeunr727df0p2yrADQsO3hnFaDc87z7GwtQ">
   <title>Buzzcasting Common</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://bayer.buzzcasting.net/js/buzzcasting/buzzcasting.css">
+  <link rel="stylesheet" href="https://cdn.buzzcasting.net/components/buzzcasting/buzzcasting.css">
   <link rel="stylesheet" href="/build/buzzcasting-common.css" />
   <script type="module" src="https://cdn.buzzcasting.net/components/buzzcasting/buzzcasting.esm.js"></script>
   <script type="module" src="/build/buzzcasting-common.esm.js"></script>
@@ -16,9 +16,9 @@
 
 <body>
 
-  <!--<buzzcasting-app domain="bayer.buzzcasting.net" channel="SocialRoom">
+  <buzzcasting-app domain="bayer.buzzcasting.net" channel="SocialRoom">
       <buzzcasting-slide class="current">
-        <div class="container-center-horizontal">
+        <div class="container container-center-horizontal w-[1920px] height-[1080px]">
           <component-template data-type="messages" data-topics="19937-3-0-0"
             data-approved="1">
             <div class="container">
@@ -31,21 +31,22 @@
         <div class="container-center-horizontal">
         </div>
       </buzzcasting-slide>
-    </buzzcasting-app>-->
-  <div class="w-[100px] h-[100px]">
+    </buzzcasting-app>
+    
+  <div class="w-[150px] h-[150px]">
     <qr-code
       contents="You will need to have a Linkfluence account in order to open the Insights dashboard https://radarly.linkfluence.com/insight-pages/#/project/5077/dashboard/19937/pages/page?page=6373a1905300005c00301588&search=&searchWorkspaceId=19937"></qr-code>
   </div>
   <!--echarts-pie width="500" height="300"></echarts-pie-->
 
-  <date-time class="font-sans text-xl text-white">
+  <date-time class="font-mono text-xl text-yellow-500">
     <div>November 20, 2022 17:55:55</div>
   </date-time>
-  <!--bayer-kpi>
+  <bayer-kpi>
     <echarts-bar width="380" height="230" option="donnees"></echarts-bar>
-  </bayer-kpi-->
+  </bayer-kpi>
   <rotating-globe code="fr"></rotating-globe>
-  
+
   <!--echarts-line width="330" height="100"></echarts-line-->
 
 </body>

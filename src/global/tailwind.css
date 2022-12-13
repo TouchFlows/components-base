@@ -571,28 +571,16 @@ video {
   display: none;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
 .h-\[150px\] {
   height: 150px;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
-.w-\[200px\] {
-  width: 200px;
+.w-\[1920px\] {
+  width: 1920px;
 }
 
 .w-\[150px\] {
   width: 150px;
-}
-
-.w-\[100px\] {
-  width: 100px;
 }
 
 .rotate-90 {
@@ -620,8 +608,8 @@ video {
   background-color: transparent;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-xl {
@@ -629,9 +617,9 @@ video {
   line-height: 1.75rem;
 }
 
-.text-white {
+.text-yellow-500 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .shadow {
