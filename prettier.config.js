@@ -7,6 +7,6 @@ module.exports = {
   jsxSingleQuote: true,
   endOfLine: 'lf',
   proseWrap: 'preserve',
-  printWidth: 120,
+  printWidth: 180,
   plugins: [require('prettier-plugin-tailwindcss')],
 }
