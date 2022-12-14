@@ -9,10 +9,10 @@ import { getAssetPath, Host } from '@stencil/core/internal'
  * @returns VNode | VNode[]
  */
 export const TailwindHost: typeof Host = (attrs, children) => {
-  return (
-    <Host {...attrs}>
-      <link rel="stylesheet" href={getAssetPath('components-base.css')} />
-      {children}
-    </Host>
-  )
+	return (
+		<Host {...attrs}>
+			<link rel="stylesheet" href={getAssetPath('components-base.css')} />
+			{children}
+		</Host>
+	)
 }

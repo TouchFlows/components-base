@@ -2,9 +2,9 @@
  * Get element to animate
  */
 export const getElementToAnimate = (parent: HTMLElement): HTMLElement => {
-  return parent.shadowRoot !== null
-    ? parent
-    : ((parent.firstElementChild || (parent.children.length && parent.children[0]) || parent) as HTMLElement)
+	return parent.shadowRoot !== null
+		? parent
+		: ((parent.firstElementChild || (parent.children.length && parent.children[0]) || parent) as HTMLElement)
 }
 
 /**
@@ -12,8 +12,8 @@ export const getElementToAnimate = (parent: HTMLElement): HTMLElement => {
  * @param myNode
  */
 export const clearContents = (myNode: HTMLElement): void => {
-  // using range as mostly we use the Host tag to encapsulate HTMLElements
-  let range = document.createRange()
-  range.selectNodeContents(myNode)
-  range.deleteContents()
+	// using range as mostly we use the Host tag to encapsulate HTMLElements
+	let range = document.createRange()
+	range.selectNodeContents(myNode)
+	range.deleteContents()
 }

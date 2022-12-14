@@ -4,7 +4,7 @@
  * @returns
  */
 export function getRandomValue(array: string | any[]) {
-  return array[Math.floor(Math.random() * array.length)]
+	return array[Math.floor(Math.random() * array.length)]
 }
 
 /**
@@ -12,12 +12,12 @@ export function getRandomValue(array: string | any[]) {
  * @returns uid
  */
 export function stringGen() {
-  let text = ''
-  const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+	let text = ''
+	const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
 
-  for (var i = 0; i < 7; i++) text += possible.charAt(Math.floor(Math.random() * possible.length))
+	for (var i = 0; i < 7; i++) text += possible.charAt(Math.floor(Math.random() * possible.length))
 
-  return text
+	return text
 }
 
 /**
@@ -26,9 +26,9 @@ export function stringGen() {
  * @returns camilized string
  */
 export function camelize(str: string) {
-  return str
-    .replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
-      return index === 0 ? word.toLowerCase() : word.toUpperCase()
-    })
-    .replace(/\s+/g, '')
+	return str
+		.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+			return index === 0 ? word.toLowerCase() : word.toUpperCase()
+		})
+		.replace(/\s+/g, '')
 }
