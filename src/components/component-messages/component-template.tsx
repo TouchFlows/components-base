@@ -18,6 +18,9 @@ export class ComponentTemplate {
       return
     }
     let myData = structuredClone(data.data.messages)
+    /**
+     * insert your data manipulation code here
+     */
 
     this.state = {
       ...this.state,
